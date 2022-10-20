@@ -87,14 +87,14 @@ my_dict.update({'motor_type': "diesel", 'cc2': 2000})
 
 
 my_dict = { "auto": "Ford", 
-            "color": "blue",
-            "brand": {
-                "brand": {
-                            "brand": {
-                                    "brand": "GM"
-                                    }}
-            } 
-            }
+    "color": "blue",
+    "brand": {
+        "brand": {
+                    "brand": {
+                            "brand": "GM"
+                            }}
+        } 
+    }
 
 
 print(my_dict['brand']['brand']['brand']['brand'])
