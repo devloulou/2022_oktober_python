@@ -69,3 +69,5 @@ for item in my_list:
 
     print(my_val)
     print(type(my_val))
+
+
