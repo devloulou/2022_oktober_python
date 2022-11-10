@@ -11,3 +11,4 @@
 # import test_file
 from test_file import my_list
 
+print(len(my_list))
