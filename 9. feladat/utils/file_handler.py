@@ -28,7 +28,7 @@ def write_json(file_path, json_data):
         raise FileNotFoundError(f"Given file {file_path} is not exists")
 
     with open(file_path, 'w', encoding="utf-8") as f:
-        json.dump(json_data, f, ensure_ascii=False) 
+        json.dump(json_data, f, ensure_ascii=False, indent=4) 
     
     return True
 

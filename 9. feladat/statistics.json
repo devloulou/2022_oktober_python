@@ -1,1 +1,35 @@
-{"kulcs": "érték"}
+{
+    "page_num": 290,
+    "most_common_words": [
+        [
+            "which",
+            636
+        ],
+        [
+            "there",
+            508
+        ],
+        [
+            "could",
+            458
+        ],
+        [
+            "shall",
+            410
+        ],
+        [
+            "would",
+            408
+        ]
+    ],
+    "min_max_rows": {
+        "max_row": {
+            "row": 10645,
+            "value": "had seen those awful women growing into reality through the whirling mist"
+        },
+        "min_row": {
+            "row": 3942,
+            "value": "is."
+        }
+    }
+}
