@@ -87,5 +87,14 @@ where id = 2
 delete from users where id = 2;
 --delete users where id = 2;
 
+/*
+adatmodellezés alapjai: OLTP, 3NF adatmadollezés
+kapcsolat táblák között
+kulcsok
+indexek
+megszorítások
 
+select és hozzátartozó utasítások
+
+*/
 
