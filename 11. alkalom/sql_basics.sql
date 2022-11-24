@@ -88,6 +88,15 @@ delete from users where id = 2;
 --delete users where id = 2;
 
 /*
+Normalizált vs Denormalizált
+OLTP - normál formák: 3NF
+Adattárház: dimenzionális modellezés: Kimball
+            Inmoni: 3NF
+            Data Vault: hibrid: 3NF és dimenzionális
+
+
+
+
 adatmodellezés alapjai: OLTP, 3NF adatmadollezés
 kapcsolat táblák között
 kulcsok
