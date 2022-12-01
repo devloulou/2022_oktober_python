@@ -23,3 +23,21 @@ A megoldáshoz vezető út:
 """
 
 from utils.file_handler import read_txt
+
+def get_only_txt_file():
+    import os
+    folder_path = os.path.dirname(__file__)
+    temp = []
+    for item in os.listdir(folder_path):
+        # if '.txt' in item:
+        # if item.endswith('.txt'):
+        if item[-4:] == '.txt':
+            temp.append(item)
+    print(temp)
+    return [item for item in os.listdir(folder_path) if item.endswith('.txt')]
+
+
+if __name__ == "__main__":
+    files = get_only_txt_file()
+
+    print(files)
