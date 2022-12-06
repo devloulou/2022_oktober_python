@@ -1,0 +1,22 @@
+{
+    "longest_book": {
+        "page_size": 1076,
+        "title": "War and Peace"
+    },
+    "shortest_book": {
+        "page_size": 55,
+        "title": "Alice's Adventures in Wonderland"
+    },
+    "oldest_book": {
+        "title": "A Tale of Two Cities",
+        "release": 1994
+    },
+    "longest_title": {
+        "title": "Heart of Darkness by Joseph Conrad",
+        "length": 34
+    },
+    "legtobb_5_karakteres_szo": {
+        "words_num": 163769,
+        "title": "War and Peace"
+    }
+}
