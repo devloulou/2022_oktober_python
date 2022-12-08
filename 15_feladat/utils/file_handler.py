@@ -36,4 +36,3 @@ if __name__ == '__main__':
         # itt fogom a statisztikákat előállítani
         data = {}
         write_json(json_path, data)
-
