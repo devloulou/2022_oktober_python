@@ -29,7 +29,7 @@ class FileHandler:
         return data
 
     # nem használ semmit az osztály attributumai közül
-    # statikus függvény legyen - > @staticmethod
+    # statikus függvény legyen -> @staticmethod
     # ő nem lát semmit sem az osztály attributumai közül -> nem is tudja azokat módosítani
     # attributum: az osztály tartozó függvények, változók
     # utility megoldást kell csinálni
@@ -37,7 +37,7 @@ class FileHandler:
     @staticmethod
     def create_data_for_insert(txt_data):
         # [(a, b, c, d,....), (a, b, c, d, ....)]
-        rows = data.split('\n')
+        rows = txt_data.split('\n')
         cols = rows.pop(0).split(',')
 
         # insert_data = []
@@ -49,8 +49,6 @@ class FileHandler:
         }
         return insert_data
 
-
-        
 
 if __name__ == '__main__':
     test = FileHandler()
