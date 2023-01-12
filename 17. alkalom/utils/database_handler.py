@@ -17,7 +17,8 @@ class DBHandler:
         self.engine = create_engine(postgres_url)
 
 
-    def create_table(self, cols):
+    @staticmethod
+    def create_table(cols):
         create_statement = "create table if not exists employee_data ("
 
         for idx, col in enumerate(cols):
@@ -31,7 +32,8 @@ class DBHandler:
 
         return create_statement
 
-    def create_insert_statement(self, cols):
+    @staticmethod
+    def create_insert_statement(cols):
         # insert into employee_data (col1, col2, col3 ... coln) values ('liutya', 'alma'.---)
         # adatbázik komplex rendszerek -> saját működésük van -> "önálló életet élnek"
         # próbálják optimalizálni az utasításokat: insertek esetén a javaslat: használj bind változókat
