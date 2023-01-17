@@ -83,6 +83,7 @@ if __name__ == '__main__':
     db.execute_sql(create_table)
     db.insert_many(insert_statement, ins_data['data'])
 
+
     # with db.engine.connect() as conn:
     #     test = conn.execute("select 1")
 

@@ -64,6 +64,9 @@ my_list = ('Trabant', 'blue', 10_000)
 
 ########################################################################
 
-# 3. feladat:
+# 3. feladat: ha páros, akkor legyen a szám értéke a négyzetes érték
+
+my_list = [item**2 if item%2==0 else item for item in range(100)]
 
 
+print(my_list)
