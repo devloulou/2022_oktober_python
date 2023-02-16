@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  flask_app:
+    build: .
+    ports:
+      - "8000:5000"
+  
+  postgres_db:
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5455:5432"
+    volumes:
+      - postgres_volume:/var/lib/postgresql/data
+  mongo:
+    ports:
+        - '27018:27017'
+    container_name: dkrcomp-mongo
+    restart: always
+    logging:
+        options:
+            max-size: 1g
+    environment:
+        - MONGO_INITDB_ROOT_USERNAME=mongoadmin
+        - MONGO_INITDB_ROOT_PASSWORD=bdung
+    image: mongo
+
+volumes:
+  postgres_volume:
